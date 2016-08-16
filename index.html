@@ -2,6 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href='css/base.css'>
 		<link rel="icon" type="image/x-icon" href='images/favicon.ico'>
 		<link rel="stylesheet" href='js/jqueryui/jquery-ui.min.css'>
@@ -10,13 +11,17 @@
 
 	<body>
 		<div id='navbar'>
-			<div id='nameCircle'><div id='name'>Allen He</div></div>
+			<div id='nameCircle'>
+				<div id='horizontalBar'></div>
+				<div id='verticalBar'></div>
+				<div id='name'>Allen He</div>
+			</div>
 			<ul id=''>
 				<li id="aboutme"> About Me </li>
 				<li id="projects"> Projects </li>
 				<li id="skills"> Skills </li>
-				<li id="resume"> Resume </li>
-				<li id="contact"> Contact </li>
+				<a href="./files/Resume.pdf"><li id="resume"> Resume </li></a>
+				<!-- <li id="contact"> Contact </li> -->
 			</ul>
 		</div>
 
@@ -24,29 +29,46 @@
 			<div class="contents" id='contents-nameCircle'>
 				Welcome
 			</div>
+
 			<div class="contents" id='contents-aboutme'>
 				<p>
 					Hey! I'm Allen. I am a sophomore currently study Computer Science at 
 					the University of Pennsylvania with a plan to minor in Music and Math. 
 				</p>
 				<p>
-					I'm an avid student of programming and also a passionate musician. I 
-					grew up with the violin, and taught myself the guitar a few years ago.
+					I love to play guitar and sing in my free time, as well as play the violin.
+					I enjoy pickup basketball and soccer, even if I always try to emulate NBA and 
+					Premier League players and look like a fool.  
 				</p>
+			</div>
 
-			</div>
 			<div class="contents" id='contents-projects'>
-				Here are my projects
+				<h3>Brick Breaker</h3>
+				A game written in Java using Swing, based off of the popular arcade/mobile game.
+				<h3>Do-Re-Pi</h3>
+				A musical ear trainer programmed on a Raspberry Pi. Made the project with a partner, Arnab Sarker, out of a need to practice for our music theory final exam.
+				<h3>My Guitar Tabs</h3>
+				A personal website developed in Django to store my guitar tabs. I found the 'Favorites' 
+				feature of the websites I used to be subpar, so I made my own.
 			</div>
+
 			<div class="contents" id='contents-skills'>
-				Here are my skills
+				<ul>
+					<li>Java</li>
+					<li>Python</li>
+					<li>C</li>
+					<li>Bash</li>
+					<li>HTML/CSS</li>
+					<li>Javascript</li>
+					<li>OCaml</li>
+				</ul>
 			</div>
 			<div class="contents" id='contents-resume'>
 				Here is my resume
 			</div>
-			<div class="contents" id='contents-contact'>
+			<!-- <div class="contents" id='contents-contact'>
 				Contact info
-			</div>
+			</div> -->
 		</div>
 
 		<script src="js/jqueryui/external/jquery/jquery.js"></script>
