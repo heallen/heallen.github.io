@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	var activeContents = 'nameCircle'
 
-	$('#navbar li').click(function(){
+	$('#navbar li, #nameCircle').click(function(){
 		var newContents = $(this).attr('id')
 		changeContents(newContents, activeContents);
 		activeContents = newContents;
