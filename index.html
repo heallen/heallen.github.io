@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href='css/base.css'>
 		<link rel="icon" type="image/x-icon" href='images/favicon.ico'>
 		<link rel="stylesheet" href='js/jqueryui/jquery-ui.min.css'>
@@ -8,11 +9,48 @@
 	</head>
 
 	<body>
-		Hello!
+		<div id='navbar'>
+			<div id='nameCircle'><div id='name'>Allen He</div></div>
+			<ul id=''>
+				<li id="aboutme"> About Me </li>
+				<li id="projects"> Projects </li>
+				<li id="skills"> Skills </li>
+				<li id="resume"> Resume </li>
+				<li id="contact"> Contact </li>
+			</ul>
+		</div>
 
+		<div id='display-container'>
+			<div class="contents" id='contents-nameCircle'>
+				Welcome
+			</div>
+			<div class="contents" id='contents-aboutme'>
+				<p>
+					Hey! I'm Allen. I am a sophomore currently study Computer Science at 
+					the University of Pennsylvania with a plan to minor in Music and Math. 
+				</p>
+				<p>
+					I'm an avid student of programming and also a passionate musician. I 
+					grew up with the violin, and taught myself the guitar a few years ago.
+				</p>
 
-		<script src="{% static 'js/jqueryui/external/jquery/jquery.js' %}"></script>
-		<script src="{% static 'js/jqueryui/jquery-ui.min.js' %}"></script>
-		<script type="text/javascript" src='{% static "js/base.js" %}'></script>
+			</div>
+			<div class="contents" id='contents-projects'>
+				Here are my projects
+			</div>
+			<div class="contents" id='contents-skills'>
+				Here are my skills
+			</div>
+			<div class="contents" id='contents-resume'>
+				Here is my resume
+			</div>
+			<div class="contents" id='contents-contact'>
+				Contact info
+			</div>
+		</div>
+
+		<script src="js/jqueryui/external/jquery/jquery.js"></script>
+		<script src="js/jqueryui/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
 	</body>	
 </html>
