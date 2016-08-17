@@ -10,6 +10,7 @@ $(document).ready(function(){
 
 	$('#nameCircle').click(function(){
 		$('#navbar ul').slideToggle(500);
+		$('#contents-nameCircle').html('Welcome!');
 	});
 });
 

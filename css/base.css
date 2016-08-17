@@ -7,7 +7,7 @@
 }
 
 #navbar li:hover, #nameCircle:hover{
-	background-color: #E6E6E6;
+	background-color: rgba(0,0,0,0.05);
 }
 
 #nameCircle{
@@ -40,7 +40,7 @@
 	height: 100%;
 	position: absolute;
 	left: 25%;
-	border: solid rgba(0,0,0,0.3) 1px;
+	border: solid rgba(0,0,0,0.15) 1px;
 }
 
 #display-container{
@@ -48,10 +48,10 @@
 	bottom: 22%;
 	left: 40%;
 	width: 40%;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.03);
 	border: solid rgba(0,0,0,0.15) 1px;
 	border-radius: 5px;
-	padding: 5px;
+	padding: 10px;
 }
 
 .contents{
@@ -66,8 +66,23 @@
 	margin: 25px;
 }
 
+#contents-skills #other{
+	position: absolute;
+	left: 40%;
+	top: 3%;
+}
+
+#contents-skills #languages{
+	position: relative;
+	left: 10px;
+}
+
+.contents a:hover{
+	text-decoration: underline;
+}
+
 #navbar ul .active{
-	background-color: #E6E6E6;
+	background-color: rgba(0,0,0,0.05);
 	color: black;
 }
 
