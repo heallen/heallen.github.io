@@ -1,114 +1,75 @@
-#navbar{
-	position: absolute;
-	bottom: 18%;
-	left: 10%;
-	width: 250px;
-	font-size: 25px;
-}
+body {
+  font-family: 'Roboto';
+  color: #37B6AE;
+  text-align: center;
+  height: 100%;
+  margin: 0px; }
 
-#navbar li:hover, #nameCircle:hover{
-	background-color: rgba(0,0,0,0.05);
-}
+.content-background {
+  width: 100%;
+  position: relative; }
+  .content-background:nth-child(odd) {
+    color: white;
+    background: #37B6AE; }
+  .content-background:nth-child(even) {
+    color: #37B6AE;
+    background: white; }
 
-#nameCircle{
-	height: 200px;
-	width: 200px;
-	border: solid rgba(0,0,0,0.5) 2px;
-	border-radius: 10%;
-	position: relative;
-}
+.content-container {
+  margin: auto;
+  padding: 20px 0px;
+  width: 60%; }
 
-#name{
-	position: absolute;
-	right: 10%;
-	bottom: 7.5%;
-	font-size: 30px;
- 	/*top: 50%;
- 	left: 50%;
-  	transform: translate(-50%, -50%);*/
-  	font-family: 'Open Sans', sans-serif;
-}
+@media (min-height: 600px) and (min-width: 960px) {
+  .content-container {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute; }
 
-#navbar #horizontalBar{
-	width: 100%;
-	position: absolute;
-	bottom: 35%;
-	border: solid rgba(0,0,0,0.3) 1px;
-}
+  .content-background {
+    height: 100%; } }
+p {
+  line-height: 2em;
+  font-size: 18px; }
 
-#navbar #verticalBar{
-	height: 100%;
-	position: absolute;
-	left: 25%;
-	border: solid rgba(0,0,0,0.15) 1px;
-}
+h1 {
+  font-size: 42px; }
 
-#display-container{
-	position: absolute;
-	bottom: 22%;
-	left: 40%;
-	width: 40%;
-	background-color: rgba(0,0,0,0.03);
-	border: solid rgba(0,0,0,0.15) 1px;
-	border-radius: 5px;
-	padding: 10px;
-}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
 
-.contents{
-	display: none;
-	letter-spacing: 1px;
-	line-height: 180%;
-}
+a {
+  text-decoration: none;
+  color: #37B6AE; }
+  a:hover {
+    color: #2b8f89; }
 
-#contents-nameCircle{
-	display: block;
-	text-align: center;
-	margin: 25px;
-}
+li {
+  padding-bottom: 4px; }
 
-#contents-skills #other{
-	position: absolute;
-	left: 40%;
-	top: 3%;
-}
+#technologies-list, #languages-list {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 45px; }
 
-#contents-skills #languages{
-	position: relative;
-	left: 10px;
-}
+#header {
+  width: 100%;
+  height: 100%; }
 
-.contents a:hover{
-	text-decoration: underline;
-}
+#name {
+  text-transform: uppercase;
+  font-size: 100px;
+  letter-spacing: 15px;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute; }
+  #name:hover {
+    cursor: pointer;
+    color: #2b8f89; }
 
-#navbar ul .active{
-	background-color: rgba(0,0,0,0.05);
-	color: black;
-}
-
-#navbar ul{
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
-	display: none;
-}
-
-#navbar li{
-	padding: 5px;
-	margin-bottom: 20px;
-	border: solid black 1px;
-	border-radius: 20px;
-	width: 200px;
-	text-align: center
-}
-
-a{
-	color: inherit;
-	text-decoration: none;
-}
-
-body{
-	background-image: url(../images/wall.png);
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-}
+/*# sourceMappingURL=base.css.map */
