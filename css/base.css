@@ -8,10 +8,10 @@ body {
 .content-background {
   width: 100%;
   position: relative; }
-  .content-background:nth-child(odd) {
+  .content-background:nth-child(even) {
     color: white;
     background: #37B6AE; }
-  .content-background:nth-child(even) {
+  .content-background:nth-child(odd) {
     color: #37B6AE;
     background: white; }
 
@@ -19,6 +19,17 @@ body {
   margin: auto;
   padding: 20px 0px;
   width: 60%; }
+
+#side-nav-container {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 30px;
+  height: 150px;
+  background: #37B6AE;
+  border: 1px solid white;
+  z-index: 2;
+  display: none; }
 
 @media (min-height: 600px) and (min-width: 960px) {
   .content-container {
@@ -28,7 +39,10 @@ body {
     position: absolute; }
 
   .content-background {
-    height: 100%; } }
+    height: 100%; }
+
+  #side-nav-container {
+    display: block; } }
 p {
   line-height: 2em;
   font-size: 18px; }
@@ -40,6 +54,9 @@ ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px; }
+
+li {
+  margin-bottom: 10px; }
 
 a {
   text-decoration: none;
@@ -68,7 +85,8 @@ a {
 .left-column {
   display: inline-block;
   text-align: left;
-  width: 30%; }
+  width: 30%;
+  margin-bottom: 25px; }
 
 .right-column {
   display: inline-block;
@@ -86,16 +104,12 @@ a {
     line-height: 16px;
     vertical-align: middle; }
 
-li {
-  margin-bottom: 10px; }
-
 #technologies-list, #languages-list {
   display: inline-block;
   vertical-align: top;
   padding: 0px 45px; }
 
 #header {
-  width: 100%;
   height: 100%; }
 
 #header-text {
