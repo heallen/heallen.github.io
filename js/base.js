@@ -1,5 +1,20 @@
 $(function(){
-	$("#name").click(function(){
-		$("body").animate({"scrollTop": window.innerHeight}, 800);
+	$("#header-text").click(function(){
+		$("body").animate({"scrollTop": $('#aboutme').offset().top}, 800);
 	});
+
+	$("#projects li").click(function(){
+		if(!$("#projects-navigation").hasClass("left-column")){
+			$("#projects .content-container").hide();
+			$("#projects-navigation").addClass("left-column");
+			$("#"+this.id.replace("-li", "-info")).show();
+			$("#projects .content-container").show(400);
+			$(this).addClass("selected");
+		} else{
+			$("#projects li").removeClass("selected");
+			$(this).addClass("selected");
+			$(".right-column div").hide();
+			$("#"+this.id.replace("-li", "-info")).show();
+		}
+	})
 })

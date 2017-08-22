@@ -11,7 +11,7 @@
 
 <body>
 	<div id='header'>
-		<h1 id='name'>Allen He</h1>
+		<div id='header-text'>Allen He<div id="header-subtext">Student, Teacher, Developer</div></div>
 	</div>
 
 	<div id='body-container'>
@@ -37,19 +37,48 @@
 
 		<div class="content-background" id='projects'>
 			<div class="content-container">
-				<h1>Projects</h1>
-				<a href="https://devpost.com/software/iplo-analysis" target="_blank"><h3>Iplo Analysis</h3></a>
-				<p>
-					Web app that compares two bodies of text using probabilistic methods and large text corpora, then visualizes results. Placed top 30 at PennApps XV overall, honorable mention.
-				</p>
-				<a href="https://github.com/heallen/speechTranslationApp" target="_blank"><h3>EasyTranslate</h3></a>
-				<p>
-					A mobile iOS app that provides users with quick speech-to-speech translation to enable speakers of two different languages to converse.
-				</p>
-				<a href="https://github.com/arnabsarker/Do-Re-Pi" target="_blank"><h3>Do-Re-Pi</h3></a>
-				<p>
-					A musical ear trainer programmed in Python on a Raspberry Pi. Made the project with a partner out of the need to practice for our music theory final exam.
-				</p>
+				<div id="projects-navigation">
+					<h1>Projects</h1>
+					<ul>
+						<li id="iplo-li">Iplo Analysis</li>
+						<li id="mhealth-li">mHealth Anesthesia</li>
+						<li id="million-li">Million Monkeys</li>
+						<li id="translate-li">EasyTranslate</li>
+						<li id="dorepi-li">Do-Re-Pi</li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<div id="iplo-info">
+						<p>
+							Flask app that compares two bodies of text using probabilistic methods and large text corpora, then visualizes results using D3.js. Brings an NLP method from academia into public use. Placed top 30 at PennApps XV overall, honorable mention.
+						</p>
+						<em>Python, Javascript, Flask, nltk, D3.js<a href="https://devpost.com/software/iplo-analysis" target="_blank"><img src="images/link.png"></img></a></em>
+					</div>
+					<div id="mhealth-info">
+						<p>
+							Web app now used internally by the Hospital of UPenn, provides operating room status dashboard and anesthesia procedure checklist. Used for efficiently managing operating room usage and training new anesthesiologists.
+						</p>
+						<em>Javascript, Meteor, jQuery, Mongo</em>
+					</div>
+					<div id="million-info">
+						<p>
+							An interactive crowdfunding web app that digitalizes a popular exhibit at the National Museum of Mathematics to raise $1 million for MoMath. Allows users to customize and purchase tesselating monkeys within a field of a million monkeys. Full-stack and mobile-responsive. Built as part of a summer internship.
+						</p>
+						<em>Javascript, Python, Flask, D3.js, Pixi.js (WebGL), jQuery, Redis, SQL</em>
+					</div>
+					<div id="translate-info">
+						<p>
+							An iOS app that provides users with quick speech-to-speech translation, enabling speakers of two different languages to converse. Presented at Penn Engineering Demo Days 2017 .
+						</p>
+						<em>Swift 3, Apple Speech API, Microsoft Translate API<a href="https://github.com/heallen/speechTranslationApp" target="_blank"><img src="images/link.png"></img></a></em>
+					</div>
+					<div id="dorepi-info">
+						<p>
+							A musical ear trainer programmed in Python on a Raspberry Pi. Made the project with a partner out of the need to practice for our music theory final exam.
+						</p>
+						<em>Python, mpg123, Raspberry Pi<a href="https://github.com/arnabsarker/Do-Re-Pi" target="_blank"><img src="images/link.png"></img></a></em>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -59,22 +88,25 @@
 				<div id='languages-list'>
 					<h2>Languages</h2>
 					<ul>
-						<li>Java</li>
-						<li>Python</li>
-						<li>HTML/CSS</li>
-						<li>Javascript</li>
-						<li>OCaml</li>
-						<li>C</li>
+						<li>Java  • • • • •</li>
+						<li>HTML/CSS • • • • •</li>
+						<li>Javascript • • • •</li>
+						<li>Python • • • •</li>
+						<li>OCaml • • • •</li>
+						<li>C • • • </li>
+						<li>SQL • • • </li>
 					</ul>
 				</div>
 				<div id='technologies-list'>
 					<h2>Technologies</h2>
 					<ul>
-						<li>jQuery</li>
-						<li>Unix/Linux, Bash</li>
-						<li>Flask</li>
-						<li>D3.js</li>
-						<li>PIXI.js</li>
+						<li>Git • • • • •</li>
+						<li>jQuery • • • • •</li>
+						<li>Sass/Scss • • • • •</li>
+						<li>D3.js • • • •</li>
+						<li>Flask • • • •</li>
+						<li>Unix/Linux • • • •</li>
+						<li>Redis • • •</li>
 					</ul>
 				</div>
 			</div>
