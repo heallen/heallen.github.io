@@ -48,7 +48,7 @@ body{
 	display: none;
 }
 
-@media (min-height: 600px) and (min-width: 960px) {
+@media (min-height: 580px) and (min-width: 960px) {
 	.content-container{
 		@include center;
 	}
@@ -58,7 +58,7 @@ body{
 	}
 
 	#side-nav-container{
-		display: block;
+		/*display: block;*/
 	}
 }
 

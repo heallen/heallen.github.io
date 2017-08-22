@@ -31,7 +31,7 @@ body {
   z-index: 2;
   display: none; }
 
-@media (min-height: 600px) and (min-width: 960px) {
+@media (min-height: 580px) and (min-width: 960px) {
   .content-container {
     transform: translate(-50%, -50%);
     top: 50%;
@@ -42,7 +42,7 @@ body {
     height: 100%; }
 
   #side-nav-container {
-    display: block; } }
+    /*display: block;*/ } }
 p {
   line-height: 2em;
   font-size: 18px; }
