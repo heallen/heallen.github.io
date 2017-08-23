@@ -180,8 +180,8 @@ a{
 #down-arrow{
 	width: 32px;
 	height: 32px;
-	position: absolute;
-	bottom: 25px;
+	position: relative;
+	top: 90%;
 	cursor: pointer;
 }
 
