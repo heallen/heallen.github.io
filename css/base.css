@@ -56,7 +56,7 @@ ul {
   padding: 0px; }
 
 li {
-  margin-bottom: 10px; }
+  margin: 10px 0px; }
 
 a {
   text-decoration: none;
@@ -75,6 +75,16 @@ a {
   padding-left: 5px;
   position: relative;
   right: 6px; }
+#projects img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 10px;
+  line-height: 16px;
+  vertical-align: middle; }
+
+.project-info {
+  margin-bottom: 20px; }
 
 .selected {
   border-left: 1px solid #37B6AE;
@@ -96,13 +106,6 @@ a {
   vertical-align: top; }
   .right-column div {
     display: none; }
-  .right-column img {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    left: 10px;
-    line-height: 16px;
-    vertical-align: middle; }
 
 #technologies-list, #languages-list {
   display: inline-block;

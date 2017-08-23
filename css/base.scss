@@ -78,7 +78,7 @@ ul{
 }
 
 li{
-	margin-bottom: 10px;
+	margin: 10px 0px;
 }
 
 a{
@@ -106,6 +106,19 @@ a{
 		position: relative;
 		right: 6px;
 	}
+
+	img{
+		width: 20px;
+		height: 20px;
+		position: relative;
+		left: 10px;
+		line-height: 16px;
+		vertical-align: middle;
+	}
+}
+
+.project-info{
+	margin-bottom: 20px;
 }
 
 .selected{
@@ -131,15 +144,6 @@ a{
 
 	div{
 		display: none;
-	}
-
-	img{
-		width: 20px;
-		height: 20px;
-		position: relative;
-		left: 10px;
-		line-height: 16px;
-		vertical-align: middle;
 	}
 }
 
