@@ -172,3 +172,17 @@ a{
 	font-weight: normal;
 	letter-spacing: 7.5px;
 }
+
+#down-arrow{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	bottom: 25px;
+	cursor: pointer;
+}
+
+#resume{
+	height: 200px;
+	line-height: 100px;
+	vertical-align: middle;
+}

@@ -1,5 +1,5 @@
 $(function(){
-	$("#header-text").click(function(){
+	$("#header-text, #down-arrow").click(function(){
 		$("body").animate({"scrollTop": $('#aboutme').offset().top}, 800);
 	});
 
