@@ -22,11 +22,27 @@ body{
 	&:nth-child(even){
 		color: white;
 		background: $teal;
+		a {
+			text-decoration: none;
+			color: lighten($teal, 20);
+
+			&:hover{
+				color: darken($teal, 10);
+			}
+		}
 	}
 
 	&:nth-child(odd){
 		color: $teal;
 		background: white;
+		a {
+			text-decoration: none;
+			color: $teal;
+
+			&:hover{
+				color: darken($teal, 10);
+			}
+		}
 	}
 }
 
@@ -79,15 +95,6 @@ ul{
 
 li{
 	margin: 10px 0px;
-}
-
-a{
-	text-decoration: none;
-	color: $teal;
-
-	&:hover{
-		color: darken($teal, 10);
-	}
 }
 
 #projects a:hover{

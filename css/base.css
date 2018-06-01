@@ -11,9 +11,19 @@ body {
   .content-background:nth-child(even) {
     color: white;
     background: #37B6AE; }
+    .content-background:nth-child(even) a {
+      text-decoration: none;
+      color: #7cd7d2; }
+      .content-background:nth-child(even) a:hover {
+        color: #2b8f89; }
   .content-background:nth-child(odd) {
     color: #37B6AE;
     background: white; }
+    .content-background:nth-child(odd) a {
+      text-decoration: none;
+      color: #37B6AE; }
+      .content-background:nth-child(odd) a:hover {
+        color: #2b8f89; }
 
 .content-container {
   margin: auto;
@@ -57,12 +67,6 @@ ul {
 
 li {
   margin: 10px 0px; }
-
-a {
-  text-decoration: none;
-  color: #37B6AE; }
-  a:hover {
-    color: #2b8f89; }
 
 #projects a:hover {
   text-decoration: underline; }
