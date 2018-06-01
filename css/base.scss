@@ -24,7 +24,7 @@ body{
 		background: $teal;
 		a {
 			text-decoration: none;
-			color: lighten($teal, 20);
+			color: lighten($teal, 30);
 
 			&:hover{
 				color: darken($teal, 10);
