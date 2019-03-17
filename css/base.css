@@ -6,16 +6,16 @@ body {
   margin: 0px; }
 
 .content-background {
-  width: 100%;
-  position: relative; }
+  display: flex;
+}
   .content-background:nth-child(even) {
     color: white;
     background: #37B6AE; }
     .content-background:nth-child(even) a {
       text-decoration: none;
-      color: #7cd7d2; }
+      color: #a3fff9; }
       .content-background:nth-child(even) a:hover {
-        color: #2b8f89; }
+        text-decoration: underline; }
   .content-background:nth-child(odd) {
     color: #37B6AE;
     background: white; }
@@ -28,31 +28,19 @@ body {
 .content-container {
   margin: auto;
   padding: 20px 0px;
-  width: 60%; }
-
-#side-nav-container {
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  width: 30px;
-  height: 150px;
-  background: #37B6AE;
-  border: 1px solid white;
-  z-index: 2;
-  display: none; }
+  width: 60%; 
+}
 
 @media (min-height: 580px) and (min-width: 960px) {
-  .content-container {
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute; }
-
   .content-background {
     height: 100%; }
 
-  #side-nav-container {
-    /*display: block;*/ } }
+  .flex {
+    display: flex;
+    align-content: center;
+  }
+}
+
 p {
   line-height: 2em;
   font-size: 18px; }
@@ -67,54 +55,6 @@ ul {
 
 li {
   margin: 10px 0px; }
-
-#projects a:hover {
-  text-decoration: underline; }
-
-#projects li {
-  font-size: 20px;
-  cursor: pointer; }
-#projects .left-column li:hover {
-  border-left: 1px solid #37B6AE;
-  padding-left: 5px;
-  position: relative;
-  right: 6px; }
-#projects img {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  left: 10px;
-  line-height: 16px;
-  vertical-align: middle; }
-
-.project-info {
-  margin-bottom: 20px; }
-
-.selected {
-  border-left: 1px solid #37B6AE;
-  padding-left: 5px;
-  position: relative;
-  right: 6px; }
-
-.left-column {
-  display: inline-block;
-  text-align: left;
-  width: 30%;
-  margin-bottom: 25px; }
-
-.right-column {
-  display: inline-block;
-  text-align: left;
-  width: 60%;
-  padding-top: 10px;
-  vertical-align: top; }
-  .right-column div {
-    display: none; }
-
-#technologies-list, #languages-list {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0px 45px; }
 
 #header {
   height: 100%; }
@@ -143,11 +83,10 @@ li {
   height: 32px;
   position: relative;
   top: 90%;
+  left: 50%;
   cursor: pointer; }
 
-#resume {
-  height: 200px;
-  line-height: 100px;
-  vertical-align: middle; }
-
+#team-image {
+  height: 75%;
+}
 /*# sourceMappingURL=base.css.map */
