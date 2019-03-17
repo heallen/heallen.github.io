@@ -28,12 +28,16 @@ body {
 .content-container {
   margin: auto;
   padding: 20px 0px;
-  width: 60%; 
+  width: 85%; 
 }
 
 @media (min-height: 580px) and (min-width: 960px) {
   .content-background {
     height: 100%; }
+
+  .content-container {
+    width: 60%;
+  }
 
   .flex {
     display: flex;
