@@ -8,7 +8,8 @@ createTunnel() {
   fi
 }
 /bin/pidof ssh
+# Comment out createTunnel when ssh into RPI not needed
 if [[ $? -ne 0 ]]; then
   echo Creating new tunnel connection
-  createTunnel
+  # createTunnel
 fi
