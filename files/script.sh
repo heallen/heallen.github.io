@@ -1,6 +1,6 @@
 #!/bin/bash
 createTunnel() {
-  /usr/bin/ssh -i "~/bongo.pem" -o ConnectTimeout=5 -N -R 2222:localhost:22 ubuntu@18.222.75.162
+  /usr/bin/ssh -i "~/bongo.pem" -o ConnectTimeout=60 -N -R 2222:localhost:22 ubuntu@18.222.75.162
   if [[ $? -eq 0 ]]; then
     echo Tunnel to jumpbox created successfully
   else
