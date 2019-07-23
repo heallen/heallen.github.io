@@ -17,4 +17,5 @@
 cd /home/ubuntu &&
 . /home/ubuntu/hardware.config
 touch smth.txt
+date >> smth.txt
 scp -o StrictHostKeyChecking=no -i "${ec2keyfile}" smth.txt "${ec2hostname}:~/"
