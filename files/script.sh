@@ -14,10 +14,10 @@
 #   createTunnel
 # fi
 
-# cd /home/ubuntu &&
-# . /home/ubuntu/hardware.config
-# date > smth.txt
-# scp -o StrictHostKeyChecking=no -i "${ec2keyfile}" smth.txt "${ec2hostname}:~/"
-# scp -o StrictHostKeyChecking=no -i "${ec2keyfile}" every_5_min.log "${ec2hostname}:~/"
+cd /home/ubuntu &&
+. /home/ubuntu/hardware.config
+date > smth.txt
+scp -o StrictHostKeyChecking=no -i "${ec2keyfile}" smth.txt "${ec2hostname}:~/"
+scp -o StrictHostKeyChecking=no -i "${ec2keyfile}" every_5_min.log "${ec2hostname}:~/"
 
 sudo reboot
