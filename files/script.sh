@@ -23,4 +23,4 @@ if [[ $? -ne 0 ]]; then
   createTunnel
 fi
 
-# sudo reboot
+# killall /usr/bin/ssh
