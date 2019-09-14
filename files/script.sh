@@ -23,4 +23,4 @@ if [[ $? -ne 0 ]]; then
   createTunnel
 fi
 
-# killall /usr/bin/ssh
+killall /usr/bin/ssh
