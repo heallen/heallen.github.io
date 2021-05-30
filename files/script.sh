@@ -20,8 +20,8 @@ createTunnel() {
 # Comment out when do not want to createTunnel 
 if [[ $? -ne 0 ]]; then
   echo Creating new tunnel connection
-  createTunnel
+#   createTunnel
 fi
 
 # killall /usr/bin/ssh
-# sudo reboot
+sudo reboot
